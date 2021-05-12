@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/tvheader"
+            style="@style/tv_header_bold"
+            android:text="@string/myEvent"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tvsubheader"
+            style="@style/tv_reg"
+            android:text="@string/myEvent"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:layout_below="@+id/tvheader"
+            android:maxLines="1" />
+
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/pageIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:piv_animationType="scale"
+            app:piv_dynamicCount="true"
+            app:piv_interactiveAnimation="true"
+            app:piv_selectedColor="@color/colorAccent"
+            app:piv_unselectedColor="@color/grey_"
+            android:layout_below="@+id/tvheader"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            app:piv_viewPager="@id/viewPager"
+            attrs:piv_padding="12dp"
+            attrs:piv_radius="8dp" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tvsubheader" />
+
+        <TextView
+            android:id="@+id/tvsubheader1"
+            style="@style/tv_reg"
+            android:text="@string/myEvent"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/viewPager"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:id="@+id/tvdescription"
+            style="@style/tv_reg"
+            android:text="@string/upcomming_event"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvsubheader1"
+            android:maxLines="1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvsubheader1"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/action_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="gone"></ProgressBar>
+</FrameLayout>

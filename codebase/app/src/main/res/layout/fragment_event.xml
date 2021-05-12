@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/tvheader"
+            style="@style/tv_header_bold"
+            android:text="@string/myEvent"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tabLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvheader"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            app:tabBackground="@drawable/tab_select"
+            app:tabSelectedTextColor="@color/white"
+            android:background="@drawable/tab_bg"
+            app:tabTextColor="@color/grey_hint"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabIndicatorFullWidth="true"
+            android:layout_below="@+id/tvheader" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabLayout1" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/action_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="gone"></ProgressBar>
+</FrameLayout>

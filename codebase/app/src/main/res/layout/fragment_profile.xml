@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_without"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tv_header_bold"
+            android:text="@string/your_profile" />
+
+        <RelativeLayout
+            android:id="@+id/rlLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/logout"
+                style="@style/tv_reg"
+                android:layout_centerVertical="true"
+                android:enabled="true"
+                android:text="@string/logout"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_hint"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEdit"
+                style="@style/tv_reg"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:background="@mipmap/btn"
+                android:enabled="true"
+                android:text="@string/edit"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.ongraph.realestate.customview.CircleImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/default_icon" />
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/ivProfile"
+                android:layout_marginStart="-30dp"
+                android:layout_marginTop="-30dp"
+                android:layout_toEndOf="@+id/ivProfile"
+                android:src="@mipmap/edit_gray" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/tv_reg"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/fname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFName"
+            style="@style/et_reg"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners_grey"
+            android:enabled="false"
+            android:hint="@string/fname"
+            android:inputType="textPersonName"
+            android:padding="8dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/tv_reg"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/lname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etLName"
+            style="@style/et_reg"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners_grey"
+            android:enabled="false"
+            android:hint="@string/lname"
+            android:inputType="textPersonName"
+            android:padding="8dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/tv_reg"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/your_role" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etRole"
+            style="@style/et_reg"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners_grey"
+            android:enabled="false"
+            android:hint="@string/your_role"
+            android:inputType="textPersonName"
+            android:padding="8dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/tv_reg"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/your_bg" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etDesc"
+            style="@style/et_reg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_corners_grey"
+            android:enabled="false"
+            android:gravity="top|start"
+            android:inputType="text|textMultiLine"
+            android:minHeight="80dp"
+            android:padding="8dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            style="@style/tv_reg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@mipmap/btn"
+            android:text="@string/save_continue"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

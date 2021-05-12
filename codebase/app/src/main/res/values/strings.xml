@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Real Estate</string>
+
+    <!-- Login Strings-->
+    <string name="get_started">Get Started</string>
+    <string name="have_ticket">If you have a ticket or are a speaker, then use the same email to sign up</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="phone_no">Phone No</string>
+    <string name="reset">Reset Password</string>
+    <string name="change_pswrd">Change Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="sign_in_acc">You have an account? Sign In</string>
+    <string name="sign_up_acc">Don\'t have an account? Sign Up</string>
+    <string name="save">Save</string>
+    <string name="save_continue">Save &amp; continue</string>
+    <string name="send">Send</string>
+    <string name="logout">Logout</string>
+    <string name="edit">Edit</string>
+    <string name="confirm">Confirm</string>
+    <string name="time_out">OTP Time Out</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="with_email">With your email id</string>
+    <string name="your_role">Describe your role</string>
+    <string name="enter_otp">Please enter the 5 digit code we just sent to </string>
+    <string name="your_bg">Please tell us about your background</string>
+    <string name="verify_email">Verify your email</string>
+    <string name="resend_code">Didn\'t receive the code? Resend</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="select_option">Select Option</string>
+
+    <!--Validation Strings-->
+    <string name="valid_email">Please enter a valid email</string>
+    <string name="valid_msg">Please enter a valid message</string>
+    <string name="valid_subject">Please enter a valid subject</string>
+    <string name="valid_name">Please enter a valid name</string>
+    <string name="valid_fname">Please enter a valid first name</string>
+    <string name="valid_lname">Please enter a valid last name</string>
+    <string name="valid_password">Please enter a valid password</string>
+    <string name="valid_role">Please enter a valid role</string>
+    <string name="valid_bg">Please let us know about your background</string>
+    <string name="valid_phone">Please enter a valid phone no</string>
+    <string name="password_not_match">Passwords do not match</string>
+    <string name="password_short">Password is too short</string>
+    <string name="password_do_not_match">Password do not match with confirm password</string>
+    <string name="password_match">New password should not be same as old password</string>
+    <string name="chk_network">Could not load. Please check your internet connection</string>
+    <string name="server_error">Internal Server Error</string>
+    <string name="valid_otp">Please enter a valid OTP</string>
+    <string name="somethingWrong">Something went wrong.Please try again later</string>
+    <string name="login_alert">Please log in to use this feature.</string>
+    <string name="logout_message">Are you sure you want to logout from the app?</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="upcomming">Upcomming</string>
+    <string name="past">Past</string>
+    <string name="date">date</string>
+
+    <string name="speakers">Speakers</string>
+    <string name="myEvent">My Events</string>
+
+    <string name="upcomming_event">upcoming Event</string>
+    <string name="free">Free</string>
+    <string name="explore_event">Explore Events</string>
+    <string name="about">About</string>
+    <string name="agenda">Agenda</string>
+    <string name="attendees">Attendees</string>
+
+    <string name="rsvp">RSVP</string>
+
+    <string name="no_data">No Data Found</string>
+    <string name="checkIn">checkIn</string>
+
+
+    <!--chat-->
+    <!-- Main Activity -->
+    <string name="start_broadcast_title">Start Live Broadcast</string>
+
+    <string name="start_chat_title"  translatable="false">Start Text Chat</string>
+    <string name="topic_edit_hint">Pick a topic to chat</string>
+    <string name="powered_by_agora" translatable="false">Ongraph Tech</string>
+    <string name="need_necessary_permissions">Necessary permissions acquired</string>
+
+    <!-- Setting Activity -->
+    <string name="setting_title">Settings</string>
+    <string name="setting_resolution_title">Resolution</string>
+    <string name="setting_stats_title">Show video statistics</string>
+    <string name="setting_mirror_local_title">Local video preview mirror mode</string>
+    <string name="setting_mirror_remote_title">Remote video render mirror mode</string>
+    <string name="setting_mirror_encode_title">Local video encode mirror mode</string>
+
+    <string-array name="string_array_resolutions">
+        <item>320x240</item>
+        <item>480x360</item>
+        <item>640x360</item>
+        <item>640x480</item>
+        <item>960x540</item>
+        <item>1280x720</item>
+    </string-array>
+
+    <!-- Live Activity -->
+    <string name="fake_user_name" translatable="false">Shakespeare</string>
+
+    <!-- Role Choose Activity -->
+    <string name="select_role_title">Please choose your role</string>
+    <string name="select_role_broadcaster">Broadcaster</string>
+    <string name="select_role_audience">Audience</string>
+    <string name="select_role_broadcaster_hint">Join as broadcaster</string>
+    <string name="select_role_audience_hint">Join as audience</string>
+
+    <!-- Legal digits for channel names -->
+    <string name="legal_channel_name_characters" translatable="false">&#xA0;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&amp;()+,-:;&lt;=.>?@[]^_`{|}~</string>
+
+    <string name="str_login">Login</string>
+    <string name="str_account">Account</string>
+    <string name="account_empty">Account can not be empty</string>
+    <string name="account_too_long">Account can not exceed 64 characters</string>
+    <string name="account_starts_with_space">Account can not starts with space</string>
+    <string name="account_literal_null">Account can not be \"null\"</string>
+    <string name="login_failed">Login failed</string>
+
+    <string name="title_peer_msg">Peer to peer message</string>
+    <string name="title_channel_message">Channel message</string>
+    <string name="hint_friend">Friends name</string>
+    <string name="hint_channel">Channel name</string>
+    <string name="hint_enable_offline_message">Enable offline message</string>
+    <string name="account_cannot_be_yourself">Account can not be yourself</string>
+    <string name="channel_name_empty">Channel name can not be empty</string>
+    <string name="channel_name_too_long">Channel name can not exceed 64 characters</string>
+    <string name="channel_name_starts_with_space">Channel name can not start with space</string>
+    <string name="channel_name_literal_null">Channel name can not be \"null\"</string>
+    <string name="btn_chat">Chat</string>
+    <string name="btn_join">Join</string>
+
+    <string name="channel_title" translatable="false">%s(%d)</string>
+    <string name="join_channel_failed">Join channel failed</string>
+    <string name="single_input">Single line input</string>\
+    <string name="str_send">Send</string>
+    <string name="send_msg_failed">Failed to send message</string>
+    <string name="peer_offline">Peer is offline</string>
+    <string name="message_cached">Message cached by server</string>
+    <string name="reconnecting">Network reconnecting ...</string>
+    <string name="account_offline">Connection lost</string>
+</resources>

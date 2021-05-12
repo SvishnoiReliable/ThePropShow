@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tv_header_bold"
+            android:layout_marginTop="90dp"
+            android:text="@string/get_started" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/tv_reg"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="80dp"
+            android:text="@string/have_ticket"
+            android:textColor="@color/grey_hint" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/tv_reg"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/email_id" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEmail"
+            style="@style/et_reg"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners_grey"
+            android:hint="@string/email_id"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="8dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/tv_reg"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/password" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/grey_hint">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPassword"
+                style="@style/et_reg"
+                android:layout_height="45dp"
+                android:background="@drawable/rounded_corners_grey"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:padding="8dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/tv_reg"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/confirm_password" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/grey_hint">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etConfirmPassword"
+                style="@style/et_reg"
+                android:layout_height="45dp"
+                android:background="@drawable/rounded_corners_grey"
+                android:hint="@string/confirm_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:padding="8dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            style="@style/tv_reg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/btn"
+            android:text="@string/sign_up" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSignin"
+            style="@style/tv_reg"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:text="@string/sign_in_acc"
+            android:textColor="@color/grey_hint" />
+    </LinearLayout>
+</ScrollView>

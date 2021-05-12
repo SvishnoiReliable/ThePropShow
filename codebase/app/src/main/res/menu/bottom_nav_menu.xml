@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_event"
+        android:enabled="true"
+        android:icon="@mipmap/my_event"
+        android:title="My Events"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_explor"
+        android:enabled="true"
+        android:icon="@mipmap/explore_events"
+        android:title="Explore Events"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_message"
+        android:enabled="true"
+        android:icon="@mipmap/my_message"
+        android:title="Messages"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@mipmap/my_profile_seleted"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+</menu>
